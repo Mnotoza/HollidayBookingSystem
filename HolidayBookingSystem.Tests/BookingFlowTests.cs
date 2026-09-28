@@ -50,11 +50,11 @@ namespace HolidayBookingSystem.Tests
         public async Task BookingFlow_Create_CallsRepository()
         {
             var formData = new Dictionary<string, string>
-        {
-            { "Input.CustomerName", "Test User" },
-            { "Input.BookingDate", "2026-09-28" },
-            { "Input.Type", "Apartment" }
-        };
+            {
+                { "Input.CustomerName", "Test User" },
+                { "Input.BookingDate", "2026-09-28" },
+                { "Input.Type", "Apartment" }
+            };
 
             var content = new FormUrlEncodedContent(formData);
             var response = await _client.PostAsync("/AddBooking", content);

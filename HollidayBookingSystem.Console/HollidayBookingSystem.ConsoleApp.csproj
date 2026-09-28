@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.12" />
+    <PackageReference Include="Scrutor" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HollidayBookingSystem.Application\HollidayBookingSystem.Application.csproj" />
+    <ProjectReference Include="..\HollidayBookingSystem.Infrastructure\HollidayBookingSystem.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+	  <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

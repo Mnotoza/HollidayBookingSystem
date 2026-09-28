@@ -1,0 +1,6 @@
+@HollidayBookingSystem.Api_HostAddress = http://localhost:5230
+
+GET {{HollidayBookingSystem.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="HolidayBookingSystem.Tests/HolidayBookingSystem.Tests.csproj" Id="f8dccd48-f0d9-473a-be8b-30d3f5405815" />
+  <Project Path="HollidayBookingSystem.Application/HollidayBookingSystem.Application.csproj" />
+  <Project Path="HollidayBookingSystem.Domain/HollidayBookingSystem.Domain.csproj" />
+  <Project Path="HollidayBookingSystem.Infrastructure/HollidayBookingSystem.Infrastructure.csproj" />
+  <Project Path="HollidayBookingSystem.UI/HollidayBookingSystem.UI.csproj" Id="ca79aa48-d5ac-4fd0-995c-7fab97caf72d" />
+</Solution>

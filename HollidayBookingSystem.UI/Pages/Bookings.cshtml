@@ -1,0 +1,39 @@
+﻿@page
+@model HollidayBookingSystem.UI.Pages.BookingsModel
+@{
+    ViewData["Title"] = "Bookings";
+}
+
+<h2>Bookings</h2>
+
+@if (Model.Bookings == null || !Model.Bookings.Any())
+{
+    <p>No bookings available.</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Customer</th>
+                <th>Type</th>
+                <th>Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var booking in Model.Bookings)
+            {
+                <tr>
+                    <td>@booking.CustomerName</td>
+                    <td>@booking.Type</td>
+                    <td>@booking.BookingDate.ToShortDateString()</td>
+                    <td>
+                        <a asp-page="/EditBooking" asp-route-id="@booking.Id">Edit</a> |
+                        <a asp-page="/DeleteBooking" asp-route-id="@booking.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
